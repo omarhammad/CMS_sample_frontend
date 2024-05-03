@@ -1,0 +1,8 @@
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+node_modules/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
