@@ -12362,4 +12362,19 @@ body {
   color: rgba(255, 255, 255, 0.7) !important;
 }
 
+section {
+  display: none;
+}
+section#home {
+  display: block;
+}
+
+.center-top-toast {
+  position: fixed;
+  top: 10%; /* Adjust to the distance you want from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050; /* Higher than the navbar and other elements */
+}
+
 /*# sourceMappingURL=main.css.map*/

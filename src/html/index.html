@@ -6,5 +6,103 @@
 </head>
 <body>
 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">CMS</a>
+        <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#search_doctor">Search Doctor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#add_doctor">Add Doctor</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="toast-container center-top-toast">
+    <div class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive"
+         aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+<!-- Home section -->
+<section id="home" class="container-fluid">
+    <p class="fw-bold h5 m-3">Our Clinic Management System is designed to enhance healthcare delivery through
+        streamlined operations and improved patient care.</p>
+</section>
+
+<!-- Search doctors section -->
+<section id="search_doctor" class="container-fluid my-auto mt-3">
+    <div class="container-fluid w-75">
+        <form>
+            <div>
+                <label class="form-label h3" for="search_term">Search for doctors</label>
+                <input type="text" id="search_term" class="form-control">
+            </div>
+        </form>
+        <div id="results">
+
+        </div>
+    </div>
+
+</section>
+
+<!-- Add doctor section -->
+<section id="add_doctor" class="container-fluid width-s-90 width-m-75 shadow p-3 m-auto">
+    <p class="h3 text-center">Add New Doctor</p>
+    <form id="add_form" class="container-fluid w-75">
+        <div class="m-2">
+            <label class="form-label" for="first_name">First Name</label>
+            <input class="form-control" name="firstName" placeholder="Jan" type="text" id="first_name"/>
+        </div>
+        <div class="m-2">
+            <label class="form-label" for="last_name">Last Name</label>
+            <input class="form-control" name="lastName" placeholder="Smith" type="text" id="last_name"/>
+        </div>
+        <div class="m-2">
+            <label class="form-label" for="spec">Specialization</label>
+            <input class="form-control" name="specialization" placeholder="e.g:Urology" type="text" id="spec"/>
+        </div>
+        <div class="m-2">
+            <label class="form-label" for="phone_number">Phone Number</label>
+            <input class="form-control" name="phoneNumber" placeholder="+32465XXXXXX" type="tel" id="phone_number"/>
+        </div>
+        <div class="m-2">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" name="email" placeholder="example@gmail.com" type="text" id="email"/>
+        </div>
+        <div class="m-2">
+            <label class="form-label" for="username">Username</label>
+            <input class="form-control" placeholder="username" id="username" name="username"/>
+        </div>
+        <div class="m-2">
+            <label class="form-label" for="password">Password</label>
+            <input class="form-control" type="password" placeholder="password" id="password" name="password"/>
+        </div>
+        <div class="m-2">
+            <label class="form-label" for="confirm_password">Confirm Password</label>
+            <input class="form-control" type="password" placeholder="confirm password" id="confirm_password"
+                   name="confirmPassword"/>
+        </div>
+        <button class="btn btn-primary m-2" id="submit_btn" type="button">Add Doctor</button>
+    </form>
+</section>
 </body>
 </html>
